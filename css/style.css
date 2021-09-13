@@ -1,10 +1,20 @@
 html {
   box-sizing: border-box;
+  font-size: 10px;
 }
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: #314584;
+}
+body .--scroll-hiden {
+  overflow: hidden;
 }
 a {
   text-decoration: none;
@@ -28,7 +38,120 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
 }
 p {
   margin: 0;
+}
+img {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+header {
+  padding: 10px 0;
+}
+.outer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1694px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.main-container {
+  max-width: 1190;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+header .main-container {
+  display: none;
+}
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.options__language {
+  position: relative;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  color: #314584;
+  padding-right: 10px;
+  margin-right: 20px;
+}
+.options__language::after {
+  content: "";
+  position: absolute;
+  background-image: url('../assets/icons/arrow-down.svg');
+  right: 0;
+  bottom: 6px;
+  width: 8px;
+  height: 5px;
+}
+.options__contact-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 23px 21px 33px;
+  box-shadow: 0px 5px 10px 0px rgba(25, 45, 51, 0.15);
+  min-width: 201px;
+  height: 61px;
+  border-radius: 5px;
+  color: #ff3946;
+  transition: all .3s;
+}
+.options__contact-us img {
+  margin-left: 17px;
+}
+.options__contact-us:hover {
+  transform: translateY(-10%);
+  box-shadow: 0px 10px 15px 0px rgba(25, 45, 51, 0.15);
+}
+.options__contact-us:active {
+  transform: translateY(0%);
+  box-shadow: 0px 5px 10px 0px rgba(25, 45, 51, 0.15);
+}
+.navigation__li {
+  transition: all .3s;
+}
+.navigation__li:hover {
+  color: #ff3946;
+}
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 2;
+  pointer-events: none;
+  transform: translateX(100%);
+  transition: all 0.3s;
+}
+.burger-menu.--active {
+  pointer-events: all;
+  transform: translateX(0);
+}
+.burger-menu__close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: all 0.3s;
+}
+.burger-menu__close-btn:hover {
+  transform: rotate(90deg);
+}
+.burger-menu__ul {
+  text-align: center;
+}
+.burger-menu__li {
+  margin-top: 20px;
 }
