@@ -85,7 +85,7 @@ header .main-container {
 .options__language::after {
   content: "";
   position: absolute;
-  background-image: url('../assets/icons/arrow-down.svg');
+  background-image: url("../assets/icons/arrow-down.svg");
   right: 0;
   bottom: 6px;
   width: 8px;
@@ -101,7 +101,7 @@ header .main-container {
   height: 61px;
   border-radius: 5px;
   color: #ff3946;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 .options__contact-us img {
   margin-left: 17px;
@@ -115,7 +115,7 @@ header .main-container {
   box-shadow: 0px 5px 10px 0px rgba(25, 45, 51, 0.15);
 }
 .navigation__li {
-  transition: all .3s;
+  transition: all 0.3s;
 }
 .navigation__li:hover {
   color: #ff3946;
@@ -154,4 +154,48 @@ header .main-container {
 }
 .burger-menu__li {
   margin-top: 20px;
+}
+main .outer-container {
+  padding-top: 47px;
+  padding-bottom: 192px;
+}
+.spirit__header {
+  /* font-size: 7.3481rem; */
+  max-width: 535px;
+  font-size: 3.9rem;
+  line-height: 1.3;
+  margin-bottom: 45px;
+}
+.spirit__text {
+  max-width: 555px;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.667;
+  color: #6e757a;
+  margin-bottom: 37px;
+}
+.spirit__links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 358px;
+}
+.spirit__link {
+  display: inline-block;
+  font-size: 1.8rem;
+}
+.spirit__link + .spirit__link {
+  margin: 20px 0 22px 10px;
+}
+.spirit__link.--active {
+  border-radius: 100px;
+  color: #FFFFFF;
+  background-color: #ff3946;
+  padding: 20px 34px 22px 35px;
+  transition: all .3s;
+}
+.spirit__link.--active:hover {
+  color: #FFFFFF;
+  background-color: #314584;
 }
