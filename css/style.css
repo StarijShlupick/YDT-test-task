@@ -190,16 +190,19 @@ main .outer-container {
 .spirit__link + .spirit__link {
   margin: 20px 0 22px 10px;
 }
-.spirit__link.--active {
+.spirit__link.--active, .contact-us__button.--active {
   border-radius: 100px;
   color: #FFFFFF;
   background-color: #ff3946;
   padding: 20px 34px 22px 35px;
   transition: all .3s;
 }
-.spirit__link.--active:hover {
+.spirit__link.--active:hover, .contact-us__button.--active:hover {
   color: #FFFFFF;
   background-color: #314584;
+}
+.portfolio {
+  margin-bottom: 50px;
 }
 .portfolio__header {
   max-width: 370px;
@@ -229,4 +232,59 @@ main .outer-container {
 }
 .portfolio__link:hover {
   color: #314584;
+}
+.contact-us {
+  margin-bottom: 50px;
+}
+.contact-us__headlight {
+  font-size: 1.8rem;
+  color: #ff3946;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.contact-us__button {
+  font-size: 1.8rem;
+}
+.contact-us__form__input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.contact-us__input,
+.contact-us__textarea {
+  display: inline-block;
+  outline: none;
+  padding: 20px 20px 24px 20px;
+  transition: all .3s;
+  border: none;
+  background-color: #f4fafe;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #314584;
+}
+.contact-us__input::placeholder,
+.contact-us__textarea::placeholder {
+  color: #314584;
+}
+.contact-us__form {
+  padding-top: 0;
+}
+.contact-us__input {
+  max-width: 570px;
+  min-height: 60px;
+  width: 100%;
+  margin-top: 20px;
+}
+.contact-us__textarea {
+  width: 100%;
+  min-height: 120px;
+  resize: none;
+}
+.contact-us__button-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
