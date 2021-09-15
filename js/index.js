@@ -1,8 +1,10 @@
-// $(document).ready(function(){
-//   $('.your-class').slick({
-//     setting-name: setting-value
-//   });
-// });
+$(document).ready(function () {
+  $('.spirit-slider').slick({
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+});
 
 const burgerMenu = document.querySelector('.burger-menu');
 const menuLink = document.querySelectorAll('.burger-menu__li');
