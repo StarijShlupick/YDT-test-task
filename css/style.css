@@ -159,6 +159,9 @@ header .main-container {
   margin-top: 20px;
 }
 main .outer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 47px 0;
 }
 .spirit__header {
@@ -190,22 +193,26 @@ main .outer-container {
 .spirit__link + .spirit__link {
   margin: 20px 0 22px 10px;
 }
-.spirit__link.--active, .contact-us__button.--active {
+.spirit__link.--active,
+.contact-us__button.--active {
   border-radius: 100px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #ff3946;
+  box-shadow: 0px 5px 10px 0px rgba(255, 57, 70, 0.15);
   padding: 20px 34px 22px 35px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
-.spirit__link.--active:hover, .contact-us__button.--active:hover {
-  color: #FFFFFF;
+.spirit__link.--active:hover,
+.contact-us__button.--active:hover {
+  color: #ffffff;
   background-color: #314584;
+  box-shadow: none;
 }
 .portfolio {
   margin-bottom: 50px;
 }
 .portfolio__header {
-  max-width: 370px;
+  max-width: 386px;
   margin-bottom: 28px;
 }
 .portfolio__cards {
@@ -228,7 +235,7 @@ main .outer-container {
 .portfolio__link {
   font-size: 1.8rem;
   color: #ff3946;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 .portfolio__link:hover {
   color: #314584;
@@ -256,7 +263,7 @@ main .outer-container {
   display: inline-block;
   outline: none;
   padding: 20px 20px 24px 20px;
-  transition: all .3s;
+  transition: all 0.3s;
   border: none;
   background-color: #f4fafe;
   font-family: "Work Sans", sans-serif;
@@ -282,9 +289,130 @@ main .outer-container {
   min-height: 120px;
   resize: none;
 }
-.contact-us__button-wrapper{
+.contact-us__button-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #314584;
+  color: #ffffff;
+}
+.footer__headlight {
+  margin: 70px 0 26px;
+}
+.footer__header {
+  color: #ff3946;
+  text-transform: uppercase;
+}
+.footer__ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 58px;
+}
+.footer__li {
+  margin-top: 46px;
+}
+.footer__li + .footer__li {
+  margin-left: 45px;
+}
+.footer__info {
+  font-size: 1.4rem;
+  margin-bottom: 39px;
+}
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 52px;
+}
+.social__ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 255px;
+  width: 100%;
+}
+.social__li {
+  transition: all 0.3s;
+}
+.social__li:hover {
+  transform: translateY(-5%);
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 4.843rem;
+  }
+  body {
+    font-size: 1.8rem;
+  }
+  header {
+    padding: 64px 0;
+  }
+  header .outer-container {
+    display: grid;
+    grid-template-columns: minmax(89px, auto) minmax(auto, 1190px) minmax(89px, auto);
+  }
+  header .outer-container .logo {
+    padding-right: 20px;
+  }
+  header .main-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  header .navigation {
+    margin: auto 0;
+  }
+  header .navigation__ul {
+    display: flex;
+    align-items: center;
+  }
+  header .navigation {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  header .navigation__li {
+    margin-right: 46px;
+  }
+  .burger {
+    display: none;
+  }
+  main .outer-container {
+    padding: 57px 0 340px;
+  }
+  .spirit__header {
+    font-size: 7.348rem;
+  }
+  .portfolio {
+    margin-bottom: 302px;
+  }
+  .portfolio__header {
+    margin-bottom: 88px;
+  }
+  .portfolio__cards {
+    margin-bottom: 56px;
+  }
+  .contact-us__headlight {
+    margin-bottom: 31px;
+  }
+  .contact-us__input {
+    margin-top: 56px;
+  }
+  .contact-us__form__input-wrapper {
+    margin-bottom: 37px;
+  }
+  .contact-us__button-wrapper {
+    margin-top: 66px;
+  }
+  .contact-us {
+    margin-bottom: 60px;
+  }
 }
